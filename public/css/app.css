@@ -56,3 +56,84 @@ header li a.active {
   border-bottom: 5px solid #0282f9;
 }
 
+/* Main */
+
+main {
+  padding-bottom: 3rem;
+  background-color: black;
+}
+
+main .jumbotron {
+  position: relative;
+}
+
+main .jumbotron img {
+  margin-bottom: 3rem;
+  width: 100%;
+  height: 25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+main .jumbotron a {
+  position: absolute;
+  bottom: 1.8rem;
+  padding: 0.7rem 1rem;
+  font-size: 1.2rem;
+}
+
+main .cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+main .load-more {
+  text-align: center;
+}
+
+main a {
+  padding: 1rem 3rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  background-color: #0282f9;
+}
+
+/* LinkDiv */
+
+#links {
+  position: relative;
+  padding: 3rem 0;
+  background-color: #0282f9;
+  z-index: 1;
+}
+
+#links .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#links .container div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#links .container div img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#links .container div span {
+  font-size: 0.8rem;
+  color: white;
+  text-transform: uppercase;
+}
+
