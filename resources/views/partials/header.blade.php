@@ -4,7 +4,7 @@
     </a>
     <ul>
         <li><a href="{{ @route('other')}}">characters</a></li>
-        <li><a href="{{ @route('comics')}}">comics</a></li>
+        <li><a class="@yield('comics_active')" href="{{ @route('comics')}}">comics</a></li>
         <li><a href="{{ @route('other')}}">movie</a></li>
         <li><a href="{{ @route('other')}}">tv</a></li>
         <li><a href="{{ @route('other')}}">games</a></li>

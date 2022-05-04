@@ -1,6 +1,7 @@
 @extends('templates.app')
 
-@section('title', 'Home')
+@section('title', 'Comics')
+@section('comics_active', 'active')
 
 @section('content')
     <main>
