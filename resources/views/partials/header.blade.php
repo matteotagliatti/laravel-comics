@@ -1,5 +1,7 @@
 <header class="container">
-    <img src="{{ asset('img/dc-logo.png')}}" alt="Logo" />
+    <a href="{{ @route('comics')}}">
+        <img src="{{ asset('img/dc-logo.png')}}" alt="Logo" />
+    </a>
     <ul>
         <li><a href="{{ @route('other')}}">characters</a></li>
         <li><a href="{{ @route('comics')}}">comics</a></li>
