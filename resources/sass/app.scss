@@ -116,3 +116,21 @@ main {
         }
     }
 }
+
+/* Card */
+
+.card {
+    margin-bottom: 3rem;
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: white;
+    img {
+        height: 10rem;
+        @include object-fit-top;
+    }
+    span {
+        text-transform: uppercase;
+    }
+}
