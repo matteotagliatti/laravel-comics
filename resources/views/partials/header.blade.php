@@ -1,15 +1,15 @@
 <header class="container">
     <img src="{{ asset('img/dc-logo.png')}}" alt="Logo" />
     <ul>
-        <li><a href="#">characters</a></li>
-        <li><a class="active" href="#">comics</a></li>
-        <li><a href="#">movie</a></li>
-        <li><a href="#">tv</a></li>
-        <li><a href="#">games</a></li>
-        <li><a href="#">collectibles</a></li>
-        <li><a href="#">videos</a></li>
-        <li><a href="#">fans</a></li>
-        <li><a href="#">news</a></li>
-        <li><a href="#"">shop</a></li>
+        <li><a href="{{ @route('other')}}">characters</a></li>
+        <li><a href="{{ @route('comics')}}">comics</a></li>
+        <li><a href="{{ @route('other')}}">movie</a></li>
+        <li><a href="{{ @route('other')}}">tv</a></li>
+        <li><a href="{{ @route('other')}}">games</a></li>
+        <li><a href="{{ @route('other')}}">collectibles</a></li>
+        <li><a href="{{ @route('other')}}">videos</a></li>
+        <li><a href="{{ @route('other')}}">fans</a></li>
+        <li><a href="{{ @route('other')}}">news</a></li>
+        <li><a href="{{ @route('other')}}"">shop</a></li>
     </ul>
 </header>
