@@ -23,10 +23,8 @@
                 <img src="{{ $comic['thumb']}}" alt="{{$comic[ 'title']}}" />
                 <span>{{$comic[ 'title']}}</span>
             </div>
-            @endforeach
-            
+            @endforeach  
         </div>
-            
         </div>
         <div class="load-more">
           <a href="#">Load More</a>

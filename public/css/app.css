@@ -160,3 +160,78 @@ main a {
   text-transform: uppercase;
 }
 
+/* Footer */
+
+.footer-up {
+  background-image: url("/img/footer-bg.jpg");
+}
+
+.footer-up .container {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-up .container .links {
+  color: white;
+  display: flex;
+  gap: 3rem;
+}
+
+.footer-up .container .links ul {
+  margin-bottom: 2rem;
+}
+
+.footer-up .container .links li:first-child {
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.footer-up .container .links li {
+  margin-bottom: 0.3rem;
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
+
+.footer-up .container img {
+  margin: -7rem 0;
+  overflow: hidden;
+}
+
+.footer-down {
+  position: relative;
+  padding: 2.2rem 0;
+  background-color: #303030;
+  z-index: 1;
+}
+
+.footer-down .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-down a {
+  padding: 1rem;
+  border: 2px solid #0282f9;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+}
+
+.footer-down #social {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-down #social span {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #0282f9;
+}
+
