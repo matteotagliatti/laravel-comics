@@ -18,6 +18,11 @@ Route::get('/', function () {
     return view('comics', $data);
 })->name('comics');
 
+Route::get('/comic/{id}', function ($id) {
+    $data = ["comic" => config('comics')[$id]];
+    return view('detail', $data);
+})->name('detail');
+
 Route::get('/other', function () {
     return view('other');
 })->name('other');
