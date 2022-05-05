@@ -29,7 +29,7 @@
                             <p>U.S. Price: <span class="text-white">{{ $comic['price'] }}</span></p>
                             <p class="mr">Avaiable</p>
                         </div>
-                        <p class="text-white avaiable">Check Avaiable</p>
+                        <p class="text-white avaiable">Check Avaiability</p>
                     </div>
                     <p>
                         {{ $comic['description'] }}
