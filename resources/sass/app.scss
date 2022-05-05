@@ -57,7 +57,6 @@ header {
 /* Main */
 
 main {
-    padding-bottom: 3rem;
     background-color: black;
     .jumbotron {
         height: 25rem;
@@ -83,6 +82,7 @@ main {
     }
     .load-more {
         text-align: center;
+        padding-bottom: 3rem;
     }
     a {
         padding: 1rem 3rem;
@@ -144,6 +144,7 @@ main {
 
 .footer-up {
     background-image: url("/img/footer-bg.jpg");
+    background-size: cover;
     .container {
         padding: 2rem 0;
         @include flex-between;
@@ -167,9 +168,12 @@ main {
                 opacity: 0.5;
             }
         }
+        .img-container {
+            margin: -2rem -3rem;
+            overflow: hidden;
+        }
         img {
             margin: -7rem 0;
-            overflow: hidden;
         }
     }
 }
@@ -212,6 +216,7 @@ main {
 
 .grey-bg {
     background-color: #f6f6f6;
+    z-index: 1;
 }
 
 .thumb-container {
@@ -314,7 +319,7 @@ main {
         }
         img {
             width: 100%;
-            height: 100%;
+            object-fit: contain;
         }
     }
 }
@@ -322,8 +327,70 @@ main {
 .grid-2 {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 2rem 0;
+    gap: 3rem;
+    padding-bottom: 6rem;
 
     h3 {
         color: #003d5a;
+        margin-bottom: 2rem;
+    }
+
+    .info {
+        border-top: $border;
+        padding: 0.5rem 0;
+        display: flex;
+        font-size: 0.8rem;
+        font-weight: bold;
+
+        .title {
+            color: #003d5a;
+            width: 30%;
+        }
+
+        .desc {
+            width: 70%;
+            color: #1fbae4;
+
+            .text-black {
+                color: black;
+            }
+        }
+    }
+
+    .mb {
+        border-bottom: $border;
+    }
+
+    .uppercase {
+        text-transform: uppercase;
+    }
+}
+
+.border-top {
+    border-top: $border;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    div {
+        border-left: $border;
+        border-right: $border;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+
+        span {
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #b0a7b0;
+            font-size: 0.9rem;
+        }
+
+        img {
+            width: 2rem;
+        }
     }
 }

@@ -42,4 +42,81 @@
                 </div>
             </div>
         </div>
+
+        {{-- Talent + Specs --}}
+        <div class="grey-bg">
+            <div class="container">
+                <div class="grid-2">
+                    <div>
+                        <h3>Talent</h3>
+                        <div class="info">
+                            <p class="title">Art by:</p>
+                            <p class="desc">
+                                @foreach ($comic['artists'] as $artist)
+                                    {{ $artist }}<span class="text-black">,</span>
+                                @endforeach
+                            </p>
+                        </div>
+                        <div class="info mb">
+                            <p class="title">Written by:</p>
+                            <p class="desc">
+                                @foreach ($comic['writers'] as $writer)
+                                    {{ $writer }}<span class="text-black">,</span>
+                                @endforeach
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Specs</h3>
+                        <div class="info">
+                            <p class="title">Series:</p>
+                            <p class="desc uppercase">
+                                {{ $comic['series'] }}
+                            </p>
+                        </div>
+                        <div class="info">
+                            <p class="title">U.S. Price:</p>
+                            <p>
+                                {{ $comic['price'] }}
+                            </p>
+                        </div>
+                        <div class="info mb">
+                            <p class="title">On Sale Date:</p>
+                            <p>
+                                {{ $comic['sale_date'] }}
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        {{--  --}}
+        <div class="grey-bg border-top">
+            <div class="container">
+                <div class="grid-3">
+                    {{-- Item --}}
+                    <div>
+                        <span>Digital Comics</span>
+                        <img src="{{ asset('img/buy-comics-digital-comics.png') }}" alt="image" />
+                    </div>
+                    {{-- Item --}}
+                    <div>
+                        <span>DC Merchandise</span>
+                        <img src="{{ asset('img/buy-comics-merchandise.png') }}" alt="image" />
+                    </div>
+                    {{-- Item --}}
+                    <div>
+                        <span>Subscription</span>
+                        <img src="{{ asset('img/buy-comics-subscriptions.png') }}" alt="image" />
+                    </div>
+                    {{-- Item --}}
+                    <div>
+                        <span>Comic Shop Locator</span>
+                        <img src="{{ asset('img/buy-comics-shop-locator.png') }}" alt="image" />
+                    </div>
+                </div>
+            </div>
+        </div>
     @endsection
