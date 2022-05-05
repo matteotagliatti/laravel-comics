@@ -7,10 +7,10 @@
     <main class="white-bg">
         @include('partials.jumbotron')
 
+        {{-- Thumb Img --}}
         <div class="thumb-container">
             <div class="container">
                 <div class="img-container">
-
                     <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
                     <span class="type"> {{ $comic['type'] }}</span>
                     <span class="gallery">View Gallery</span>
@@ -18,8 +18,8 @@
             </div>
         </div>
 
+        {{-- Info --}}
         <div class="container">
-            {{-- Info --}}
             <div class="grid">
                 {{-- Left --}}
                 <div class="left">
@@ -47,13 +47,17 @@
         <div class="grey-bg">
             <div class="container">
                 <div class="grid-2">
+                    {{-- Left --}}
                     <div>
                         <h3>Talent</h3>
                         <div class="info">
                             <p class="title">Art by:</p>
                             <p class="desc">
                                 @foreach ($comic['artists'] as $artist)
-                                    {{ $artist }}<span class="text-black">,</span>
+                                    {{ $artist }}
+                                    @if (!$loop->last)
+                                        <span class="text-black">,</span>
+                                    @endif
                                 @endforeach
                             </p>
                         </div>
@@ -61,11 +65,15 @@
                             <p class="title">Written by:</p>
                             <p class="desc">
                                 @foreach ($comic['writers'] as $writer)
-                                    {{ $writer }}<span class="text-black">,</span>
+                                    {{ $writer }}
+                                    @if (!$loop->last)
+                                        <span class="text-black">,</span>
+                                    @endif
                                 @endforeach
                             </p>
                         </div>
                     </div>
+                    {{-- Right --}}
                     <div>
                         <h3>Specs</h3>
                         <div class="info">
@@ -92,7 +100,7 @@
             </div>
         </div>
 
-        {{--  --}}
+        {{-- Links --}}
         <div class="grey-bg border-top">
             <div class="container">
                 <div class="grid-3">
