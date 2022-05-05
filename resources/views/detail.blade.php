@@ -1,6 +1,6 @@
 @extends('templates.app')
 
-@section('title', 'Detail')
+@section('title', $comic['title'])
 @section('comics_active', 'active')
 
 @section('content')
